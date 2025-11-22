@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Week 13 Listening Practice</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <style>
+    body {
+      font-family: Arial, "Microsoft JhengHei", sans-serif;
+      background: #f5f5f5;
+      margin: 0;
+      padding: 12px;
+      line-height: 1.7;
+      font-size: 18px;
+    }
+    h1, h2 { text-align: center; margin: 8px 0; }
+    h1 { font-size: 1.5rem; }
+    h2 { font-size: 1.1rem; }
+
+    .section {
+      max-width: 900px;
+      margin: 12px auto;
+      background: #ffffff;
+      border-radius: 16px;
+      padding: 14px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    }
+
+    .sentence { padding: 4px 0; }
+    .text-en { font-weight: bold; font-size: 1rem; }
+    .text-zh { font-size: 0.9rem; color: #444; padding-left: 4px; }
+
+    button {
+      border: none;
+      padding: 10px 16px;
+      border-radius: 999px;
+      background: #4b8cff;
+      color: #ffffff;
+      cursor: pointer;
+      margin-top: 8px;
+      font-size: 0.95rem;
+      width: 100%;
+    }
+    button:active { opacity: 0.8; }
+
+    .progress {
+      height: 8px;
+      width: 100%;
+      background: #eee;
+      border-radius: 999px;
+      margin-top: 8px;
+      overflow: hidden;
+    }
+    .progress-bar {
+      height: 100%;
+      width: 0%;
+      background: #4b8cff;
+      border-radius: 999px;
+      transition: width 0.1s linear;
+    }
+
+    .speed-control {
+      max-width: 900px;
+      margin: 4px auto 10px auto;
+      text-align: center;
+      font-size: 0.9rem;
+    }
+    select {
+      padding: 4px 10px;
+      border-radius: 999px;
+      border: 1px solid #ccc;
+      font-size: 0.9rem;
+    }
+
+    .hypnosis { text-align: center; max-width: 900px; margin: 10px auto 20px auto; }
+    .hypnosis button { background: #9b6bff; }
+
+    .note-card {
+      max-width: 900px;
+      margin: 8px auto;
+      background: #fff5d7;
+      border-radius: 12px;
+      padding: 10px 12px;
+      font-size: 0.9rem;
+      border: 1px dashed #f0b400;
+    }
+
+    .img-card { text-align: center; margin-bottom: 10px; }
+    .img-card img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 12px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+    .img-caption {
+      font-size: 0.85rem;
+      color: #666;
+      margin-top: 4px;
+    }
+  </style>
+</head>
+<body>
+
+<h1>Week 13 Listening Practice</h1>
+
+<!-- 播放速度 -->
+<div class="speed-control">
+  🔊 播放速度：
+  <select id="speedSelect">
+    <option value="1">1.0×</option>
+    <option value="0.8">0.8×（慢速）</option>
+  </select>
+</div>
+
+<!-- 星期一 -->
+<div class="section">
+  <h2>📅 Monday　星期一</h2>
+
+  <div class="sentence"><div class="text-en">First, I wash my hands.</div><div class="text-zh">首先，我洗手。</div></div>
+  <div class="sentence"><div class="text-en">Next, I use soap on my hands.</div><div class="text-zh">接著，我用肥皂。</div></div>
+  <div class="sentence"><div class="text-en">Then, I rinse my hands.</div><div class="text-zh">然後，我把手沖乾淨。</div></div>
+  <div class="sentence"><div class="text-en">Last, I dry my hands.</div><div class="text-zh">最後，我把手擦乾。</div></div>
+
+  <button class="play-day" data-audio="First Next Then Last.mp3">▶ Play Monday</button>
+  <div class="progress"><div class="progress-bar"></div></div>
+</div>
+
+<!-- 星期二 -->
+<div class="section">
+  <h2>📅 Tuesday　星期二</h2>
+
+  <div class="sentence"><div class="text-en">Every morning, I wash my hands to stay healthy.</div><div class="text-zh">每天早上，我會洗手保持健康。</div></div>
+  <div class="sentence"><div class="text-en">First, I turn on the tap and make my hands wet.</div><div class="text-zh">首先，我打開水龍頭把手弄濕。</div></div>
+  <div class="sentence"><div class="text-en">Then I use soap and rub my hands together.</div><div class="text-zh">然後，我用肥皂搓洗雙手。</div></div>
+  <div class="sentence"><div class="text-en">I rinse the bubbles off with water.</div><div class="text-zh">我用水把泡泡沖掉。</div></div>
+  <div class="sentence"><div class="text-en">Last, I dry my hands with a soft towel.</div><div class="text-zh">最後，我用毛巾擦乾手。</div></div>
+
+  <button class="play-day" data-audio="Reading.mp3">▶ Play Tuesday</button>
+  <div class="progress"><div class="progress-bar"></div></div>
+</div>
+
+<!-- 星期三 -->
+<div class="section">
+  <h2>📅 Wednesday　星期三（Writing + Labels）</h2>
+
+  <div class="img-card">
+    <img src="Labels.png" alt="Labels">
+    <div class="img-caption">✏️ Look at the picture and read the sentences.</div>
+  </div>
+
+  <div class="sentence"><div class="text-en">I wash my hands with soap.</div><div class="text-zh">我用肥皂洗手。</div></div>
+  <div class="sentence"><div class="text-en">I rub my hands to make bubbles.</div><div class="text-zh">我搓手讓泡泡跑出來。</div></div>
+  <div class="sentence"><div class="text-en">Water is coming from the tap.</div><div class="text-zh">水從水龍頭流出來。</div></div>
+  <div class="sentence"><div class="text-en">The water splashes on my hands.</div><div class="text-zh">水花濺到我的手上。</div></div>
+
+  <button class="play-day" data-audio="Writing.mp3">▶ Play Wednesday</button>
+  <div class="progress"><div class="progress-bar"></div></div>
+</div>
+
+<!-- 小提醒 -->
+<div class="note-card">
+  🗣 <strong>發音提醒：</strong>「hands」的 s 要唸成 /z/（handz）<br>
+</div>
+
+<!-- 催眠模式 -->
+<div class="hypnosis">
+  <button id="playAll">🌙 催眠模式：Monday → Tuesday → Wednesday</button>
+</div>
+
+<script>
+  const playButtons = document.querySelectorAll(".play-day");
+  const speedSel = document.getElementById("speedSelect");
+  const bars = document.querySelectorAll(".progress-bar");
+
+  let current = null; // 目前播放的 audio
+  let currentBar = null;
+  let currentBtn = null;
+
+  function resetBars() {
+    bars.forEach(b => b.style.width = "0%");
+  }
+
+  function stopAll() {
+    if (current) {
+      current.pause();
+      current.currentTime = 0;
+    }
+    resetBars();
+    if (currentBtn) currentBtn.textContent = "▶ Play";
+    current = null;
+    currentBtn = null;
+    currentBar = null;
+  }
+
+  // ▶ 單日播放：可 Play / Pause 切換
+  playButtons.forEach(btn => {
+    btn.addEventListener("click", () => {
+      const src = btn.dataset.audio;
+
+      // 若按的是同一天 → 做 Play / Pause 切換
+      if (current && currentBtn === btn) {
+        if (current.paused) {
+          current.play();
+          btn.textContent = "⏸ Pause";
+        } else {
+          current.pause();
+          btn.textContent = "▶ Play";
+        }
+        return;
+      }
+
+      // 按到不同的日子 → 重播新的
+      stopAll();
+
+      const audio = new Audio(src);
+      const bar = btn.nextElementSibling.querySelector(".progress-bar");
+
+      current = audio;
+      currentBar = bar;
+      currentBtn = btn;
+
+      btn.textContent = "⏸ Pause";
+
+      audio.playbackRate = parseFloat(speedSel.value);
+      audio.play();
+
+      audio.ontimeupdate = () => {
+        if (audio.duration)
+          bar.style.width = (audio.currentTime / audio.duration) * 100 + "%";
+      };
+
+      audio.onended = () => {
+        bar.style.width = "0%";
+        btn.textContent = "▶ Play";
+      };
+    });
+  });
+
+  // 🌙 催眠模式（全部依序播放）— 支援播放中按任一天可中斷
+  document.getElementById("playAll").addEventListener("click", () => {
+    stopAll();
+
+    const list = [
+      "First Next Then Last.mp3",
+      "Reading.mp3",
+      "Writing.mp3"
+    ];
+    let i = 0;
+
+    function playNext() {
+      if (i >= list.length) {
+        stopAll();
+        return;
+      }
+
+      const audio = new Audio(list[i]);
+      current = audio;
+
+      audio.playbackRate = parseFloat(speedSel.value);
+      audio.play();
+
+      audio.onended = () => {
+        i++;
+        setTimeout(playNext, 500);
+      };
+    }
+
+    playNext();
+  });
+</script>
+
+
+</body>
+</html>
